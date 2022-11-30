@@ -95,4 +95,4 @@ We love contributors! Feel free to contribute to this project but please read th
 
 ## ⚖️ License
 
-Lenster is open-sourced software licensed under the © [MIT](LICENSE).
+AceSocial is open-sourced software licensed under the © [MIT](LICENSE).

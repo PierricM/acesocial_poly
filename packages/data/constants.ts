@@ -35,9 +35,9 @@ export const XMTP_ENV = IS_MAINNET ? 'production' : 'dev';
 export const XMTP_PREFIX = 'lens.dev/dm';
 
 // Application
-export const APP_NAME = 'Lenster';
+export const APP_NAME = 'AceSocial';
 export const DESCRIPTION =
-  'Lenster is a composable, decentralized, and permissionless social media web app built with Lens Protocol 🌿';
+  'AceSocial is a composable, decentralized, and permissionless social media web app 🌿';
 export const DEFAULT_OG = 'https://assets.lenster.xyz/images/og/logo.jpeg';
 export const APP_VERSION = packageJson.version;
 
