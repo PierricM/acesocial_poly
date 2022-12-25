@@ -1,0 +1,1 @@
+web: turbo run dev --parallel
