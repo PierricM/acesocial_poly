@@ -17,6 +17,7 @@
     "prepare": "husky install"
   },
   "devDependencies": {
+    "eslint": "^8.30.0",
     "husky": "^8.0.2",
     "prettier": "latest",
     "turbo": "latest"
