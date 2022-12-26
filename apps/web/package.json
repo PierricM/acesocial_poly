@@ -70,5 +70,8 @@
   },
   "engines": {
     "node": ">=14.0.0"
-  }
+  },
+  "resolutions": {
+    "eslint-config-weblint": "^0.0.0"
+    }
 }
