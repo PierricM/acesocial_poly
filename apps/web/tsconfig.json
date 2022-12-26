@@ -8,8 +8,7 @@
       "@utils*": ["src/utils*"],
       "@lib*": ["src/lib*"],
       "@gql*": ["src/graphql*"],
-      "@generated*": ["src/generated*"],
-      "tsconfig*": ["*"]
+      "@generated*": ["src/generated*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/styles/index.css"]
