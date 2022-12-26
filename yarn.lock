@@ -12769,6 +12769,11 @@
     "y18n" "^5.0.5"
     "yargs-parser" "^21.1.1"
 
+"yarn@^1.22.19":
+  "integrity" "sha512-/0V5q0WbslqnwP91tirOvldvYISzaqhClxzyUKXYxs07yUILIs5jx/k6CFe8bvKSkds5w+eiOqta39Wk3WxdcQ=="
+  "resolved" "https://registry.npmjs.org/yarn/-/yarn-1.22.19.tgz"
+  "version" "1.22.19"
+
 "yjs@>=13.5.22":
   "integrity" "sha512-NJqWuiDOseYjkhnSVo55z+FZD6TsOJBZfMbH2I4OCm5vsgY7TESUjUGb7Pt1lljvvdSfBVj8CxQqZAnVxe5Iyg=="
   "resolved" "https://registry.npmjs.org/yjs/-/yjs-13.5.43.tgz"
