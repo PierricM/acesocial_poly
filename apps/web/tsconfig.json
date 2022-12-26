@@ -9,7 +9,7 @@
       "@lib*": ["src/lib*"],
       "@gql*": ["src/graphql*"],
       "@generated*": ["src/generated*"],
-      "~*": ["./*"]
+      "~*": ["../../packages/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/styles/index.css"]
