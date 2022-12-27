@@ -9,14 +9,12 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
-    "heroku-prebuild": "cd apps && cd web && npm install && npm i husky --save-dev && npm run build",
     "lint": "turbo run lint",
     "typecheck": "turbo run typecheck",
     "codegen": "turbo run codegen",
     "prettier": "prettier --check \"**/*.{ts,tsx,md}\"",
-    "prettier:fix": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "prepare": "husky install"
-  },
+    "prettier:fix": "prettier --write \"**/*.{ts,tsx,md}\""
+    },
   "devDependencies": {
     "eslint": "^8.30.0",
     "husky": "^8.0.2",
