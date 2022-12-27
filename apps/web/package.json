@@ -6,9 +6,8 @@
     "dev": "next dev --port 4783",
     "build": "next build",
     "start": "next start",
-    "typecheck": "tsc --noEmit",
-    "lint": "eslint . --ext .js,.ts,.tsx,.json"
-  },
+    "typecheck": "tsc --noEmit"
+    },
   "dependencies": {
     "@apollo/client": "^3.7.1",
     "@aws-sdk/client-s3": "^3.211.0",
