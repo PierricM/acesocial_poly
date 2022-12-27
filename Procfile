@@ -1,1 +1,1 @@
-web: turbo run dev --parallel
+web: cd apps && cd web && next build
