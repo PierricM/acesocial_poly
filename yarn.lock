@@ -8079,7 +8079,7 @@ next-transpile-modules@^10.0.0:
   dependencies:
     enhanced-resolve "^5.10.0"
 
-next@*, next@^13.0.2:
+next@*, next@^13.0.2, next@^13.1.1:
   version "13.1.1"
   resolved "https://registry.npmjs.org/next/-/next-13.1.1.tgz"
   integrity sha512-R5eBAaIa3X7LJeYvv1bMdGnAVF4fVToEjim7MkflceFPuANY3YyvFxXee/A+acrSYwYPvOvf7f6v/BM/48ea5w==
@@ -9704,6 +9704,11 @@ ts-node@^10.8.1, ts-node@>=10, ts-node@>=9.0.0:
     v8-compile-cache-lib "^3.0.1"
     yn "3.1.1"
 
+tsc@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.npmjs.org/tsc/-/tsc-2.0.4.tgz"
+  integrity sha512-fzoSieZI5KKJVBYGvwbVZs/J5za84f2lSTLPYf6AGiIf43tZ3GNrI1QzTLcjtyDDP4aLxd46RTZq1nQxe7+k5Q==
+
 tsconfig-paths@^3.14.1:
   version "3.14.1"
   resolved "https://registry.npmjs.org/tsconfig-paths/-/tsconfig-paths-3.14.1.tgz"
@@ -9762,8 +9767,6 @@ turbo-darwin-arm64@1.6.3:
 
 turbo@latest:
   version "1.6.3"
-  resolved "https://registry.npmjs.org/turbo/-/turbo-1.6.3.tgz"
-  integrity sha512-FtfhJLmEEtHveGxW4Ye/QuY85AnZ2ZNVgkTBswoap7UMHB1+oI4diHPNyqrQLG4K1UFtCkjOlVoLsllUh/9QRw==
   optionalDependencies:
     turbo-darwin-64 "1.6.3"
     turbo-darwin-arm64 "1.6.3"
@@ -10027,6 +10030,7 @@ web-streams-polyfill@4.0.0-beta.3:
     react-hook-form "^7.39.3"
     react-hot-toast "^2.4.0"
     react-infinite-scroll-component "^6.1.0"
+    tsc "^2.0.4"
     tsconfig "*"
     uuid "^9.0.0"
     wagmi "^0.8.4"
