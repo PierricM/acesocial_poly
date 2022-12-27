@@ -1,1 +1,1 @@
-web: cd apps && cd web && next build
+web: cd apps && cd web && npm start
