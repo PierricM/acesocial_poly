@@ -36,7 +36,6 @@ const FeedType: FC<Props> = ({ setFocus, focus }) => {
       <FeedLink name="All posts" />
       <FeedLink name="Text" type={PublicationMainFocus.TextOnly} />
       <FeedLink name="Video" type={PublicationMainFocus.Video} />
-      <FeedLink name="Audio" type={PublicationMainFocus.Audio} />
       <FeedLink name="Images" type={PublicationMainFocus.Image} />
     </div>
   );
