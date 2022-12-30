@@ -40,11 +40,10 @@ const Feed: FC<Props> = ({ focus, feedType = PublicationSortCriteria.CuratedProf
   const publications = data?.explorePublications?.items;
   console.log(publications);
 
-  var publications2 = publications
+  var publications2 = publications;
   // .filter(
   //   book => book.profile.id === "0x59cf")
     
-
   const pageInfo = data?.explorePublications?.pageInfo;
   const hasMore = pageInfo?.next && publications2?.length !== pageInfo.totalCount;
 
@@ -59,7 +58,6 @@ const Feed: FC<Props> = ({ focus, feedType = PublicationSortCriteria.CuratedProf
   }
 
 
-
   if (publications2?.length === 0) {
     return (
       <EmptyState
@@ -72,8 +70,6 @@ const Feed: FC<Props> = ({ focus, feedType = PublicationSortCriteria.CuratedProf
   if (error) {
     return <ErrorMessage title="Failed to load explore feed" error={error} />;
   }
-
-
 
   return (
     <InfiniteScroll
