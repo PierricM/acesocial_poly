@@ -63,7 +63,7 @@ const RecommendedProfiles: FC = () => {
 
   console.log(data?.recommendedProfiles);
 
-  var profiles = data?.recommendedProfiles
+  var profiles = data?.recommendedProfiles;
 
   profiles = profiles?.filter(
     book => book.id === "0x02")
