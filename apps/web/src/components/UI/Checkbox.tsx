@@ -25,7 +25,7 @@ export const Checkbox = forwardRef<HTMLInputElement, Props>(function CheckBox(
         id={id}
         {...props}
       />
-      <label className="text-sm whitespace-nowrap inline-block dark:text-gray-200 text-gray-800" htmlFor={id}>
+      <label className="text-sm whitespace-nowrap inline-block text-gray-200 text-gray-800" htmlFor={id}>
         {label}
       </label>
     </div>

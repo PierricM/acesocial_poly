@@ -70,7 +70,7 @@ const Details: FC<Props> = ({ profile }) => {
       <div className="relative -mt-24 w-32 h-32 sm:-mt-32 sm:w-52 sm:h-52">
         <img
           src={getAvatar(profile)}
-          className="w-32 h-32 bg-gray-200 rounded-xl ring-8 ring-gray-50 sm:w-52 sm:h-52 dark:bg-gray-700 dark:ring-black"
+          className="w-32 h-32 bg-gray-200 rounded-xl ring-8 ring-gray-50 sm:w-52 sm:h-52 bg-gray-700 ring-black"
           height={128}
           width={128}
           alt={profile?.handle}
@@ -92,7 +92,7 @@ const Details: FC<Props> = ({ profile }) => {
             <Slug className="text-sm sm:text-base" slug={formatAddress(profile?.ownedBy)} />
           )}
           {currentProfile && currentProfile?.id !== profile?.id && profile?.isFollowing && (
-            <div className="py-0.5 px-2 text-xs bg-gray-200 rounded-full dark:bg-gray-700">Follows you</div>
+            <div className="py-0.5 px-2 text-xs bg-gray-200 rounded-full bg-gray-700">Follows you</div>
           )}
         </div>
       </div>

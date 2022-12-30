@@ -92,7 +92,7 @@ const SeeThroughLens: FC = () => {
             loading="lazy"
             width={20}
             height={20}
-            className="bg-gray-200 w-5 h-5 rounded-full border dark:border-gray-700/80"
+            className="bg-gray-200 w-5 h-5 rounded-full border border-gray-700/80"
             alt={profile?.handle}
           />
           <span>{seeThroughProfile ? `@${profile?.handle}` : 'My Feed'}</span>
@@ -110,7 +110,7 @@ const SeeThroughLens: FC = () => {
       >
         <Menu.Items
           static
-          className="absolute w-64 right-0 z-[5] mt-1 bg-white rounded-xl border shadow-sm dark:bg-gray-900 focus:outline-none dark:border-gray-700/80"
+          className="absolute w-64 right-0 z-[5] mt-1 bg-white rounded-xl border shadow-sm bg-gray-900 focus:outline-none border-gray-700/80"
         >
           <div className="text-xs pt-2 px-3">👀 See the feed through...</div>
           <div className="p-2">
@@ -135,7 +135,7 @@ const SeeThroughLens: FC = () => {
           </div>
           {seeThroughProfile && (
             <button
-              className="py-2 px-3 mb-2 text-left outline-none w-full mt-1 bg-gray-200 text-sm dark:bg-gray-700"
+              className="py-2 px-3 mb-2 text-left outline-none w-full mt-1 bg-gray-200 text-sm bg-gray-700"
               onClick={() => setSeeThroughProfile(null)}
             >
               Reset filter to your own feed

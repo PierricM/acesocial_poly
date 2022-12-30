@@ -69,7 +69,7 @@ const List: FC<Props> = ({ feedType }) => {
 
   if (loading) {
     return (
-      <Card className="divide-y dark:divide-gray-700">
+      <Card className="divide-y divide-gray-700">
         <NotificationShimmer />
         <NotificationShimmer />
         <NotificationShimmer />
@@ -104,7 +104,7 @@ const List: FC<Props> = ({ feedType }) => {
       next={loadMore}
       loader={<InfiniteLoader />}
     >
-      <Card className="divide-y dark:divide-gray-700">
+      <Card className="divide-y divide-gray-700">
         {notifications?.map((notification, index) => (
           <div key={`${notification?.notificationId}_${index}`} className="p-5">
             {notification.__typename === 'NewFollowerNotification' && (

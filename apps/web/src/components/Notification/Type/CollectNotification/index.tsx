@@ -40,7 +40,7 @@ const CollectNotification: FC<Props> = ({ notification }) => {
           ) : (
             <NotificationWalletProfileName wallet={notification?.wallet} />
           )}{' '}
-          <span className="text-gray-600 dark:text-gray-400">collected your </span>
+          <span className="text-gray-600 text-gray-400">collected your </span>
           <Link href={`/posts/${notification?.collectedPublication?.id}`} className="font-bold">
             {notification?.collectedPublication.__typename?.toLowerCase()}
           </Link>

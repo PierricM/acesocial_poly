@@ -118,7 +118,7 @@ const Attachment: FC<Props> = ({ attachments, setAttachments }) => {
         <Menu.Items
           ref={dropdownRef}
           static
-          className="absolute py-1 z-[5] mt-2 bg-white rounded-xl border shadow-sm dark:bg-gray-900 focus:outline-none dark:border-gray-700/80"
+          className="absolute py-1 z-[5] mt-2 bg-white rounded-xl border shadow-sm bg-gray-900 focus:outline-none border-gray-700/80"
         >
           <Menu.Item
             as="label"

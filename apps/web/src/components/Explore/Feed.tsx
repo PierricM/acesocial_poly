@@ -20,6 +20,8 @@ interface Props {
 const Feed: FC<Props> = ({ focus, feedType = PublicationSortCriteria.CuratedProfiles }) => {
   const currentProfile = useAppStore((state) => state.currentProfile);
 
+  console.log(focus);
+
   // Variables
   const request = {
     sortCriteria: feedType,
@@ -36,8 +38,15 @@ const Feed: FC<Props> = ({ focus, feedType = PublicationSortCriteria.CuratedProf
   });
 
   const publications = data?.explorePublications?.items;
+  console.log(publications);
+
+  var publications2 = publications
+  // .filter(
+  //   book => book.profile.id === "0x59cf")
+    
+
   const pageInfo = data?.explorePublications?.pageInfo;
-  const hasMore = pageInfo?.next && publications?.length !== pageInfo.totalCount;
+  const hasMore = pageInfo?.next && publications2?.length !== pageInfo.totalCount;
 
   const loadMore = async () => {
     await fetchMore({
@@ -49,7 +58,9 @@ const Feed: FC<Props> = ({ focus, feedType = PublicationSortCriteria.CuratedProf
     return <PublicationsShimmer />;
   }
 
-  if (publications?.length === 0) {
+
+
+  if (publications2?.length === 0) {
     return (
       <EmptyState
         message={<div>No posts yet!</div>}
@@ -62,16 +73,18 @@ const Feed: FC<Props> = ({ focus, feedType = PublicationSortCriteria.CuratedProf
     return <ErrorMessage title="Failed to load explore feed" error={error} />;
   }
 
+
+
   return (
     <InfiniteScroll
-      dataLength={publications?.length ?? 0}
+      dataLength={publications2?.length ?? 0}
       scrollThreshold={SCROLL_THRESHOLD}
       hasMore={hasMore}
       next={loadMore}
       loader={<InfiniteLoader />}
     >
-      <Card className="divide-y-[1px] dark:divide-gray-700/80">
-        {publications?.map((publication, index) => (
+      <Card className="divide-y-[1px] divide-gray-700/80">
+        {publications2?.map((publication, index) => (
           <SinglePublication
             key={`${publication.id}_${index}`}
             publication={publication as LensterPublication}

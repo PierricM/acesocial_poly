@@ -73,7 +73,7 @@ const SignedUser: FC = () => {
           <Menu.Button
             as="img"
             src={getAvatar(currentProfile as Profile)}
-            className="w-8 h-8 rounded-full border cursor-pointer dark:border-gray-700/80"
+            className="w-8 h-8 rounded-full border cursor-pointer border-gray-700/80"
             alt={currentProfile?.handle}
           />
           <Transition
@@ -88,7 +88,7 @@ const SignedUser: FC = () => {
           >
             <Menu.Items
               static
-              className="absolute right-0 py-1 mt-2 w-48 bg-white rounded-xl border shadow-sm dark:bg-gray-900 focus:outline-none dark:border-gray-700/80"
+              className="absolute right-0 py-1 mt-2 w-48 bg-white rounded-xl border shadow-sm bg-gray-900 focus:outline-none border-gray-700/80"
             >
               <Menu.Item
                 as={NextLink}
@@ -107,7 +107,7 @@ const SignedUser: FC = () => {
                 as="a"
                 onClick={() => setShowStatusModal(true)}
                 className={({ active }: { active: boolean }) =>
-                  clsx({ 'dropdown-active': active }, 'menu-item border dark:border-gray-700/80')
+                  clsx({ 'dropdown-active': active }, 'menu-item border border-gray-700/80')
                 }
               >
                 <div className="flex items-center space-x-2">
@@ -184,11 +184,11 @@ const SignedUser: FC = () => {
                     {profiles.map((profile: Profile, index) => (
                       <div
                         key={profile?.id}
-                        className="block text-sm text-gray-700 rounded-lg cursor-pointer dark:text-gray-200"
+                        className="block text-sm text-gray-700 rounded-lg cursor-pointer text-gray-200"
                       >
                         <button
                           type="button"
-                          className="flex items-center py-1.5 px-4 space-x-2 w-full rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+                          className="flex items-center py-1.5 px-4 space-x-2 w-full rounded-lg hover:bg-gray-100 hover:bg-gray-800"
                           onClick={() => {
                             const selectedProfile = profiles[index];
                             setCurrentProfile(selectedProfile);
@@ -200,7 +200,7 @@ const SignedUser: FC = () => {
                             <CheckCircleIcon className="w-4 h-4 text-green-500" />
                           )}
                           <img
-                            className="w-5 h-5 rounded-full border dark:border-gray-700/80"
+                            className="w-5 h-5 rounded-full border border-gray-700/80"
                             height={20}
                             width={20}
                             src={getAvatar(profile)}
@@ -258,7 +258,7 @@ const SignedUser: FC = () => {
                     as="div"
                     onClick={toggleStaffMode}
                     className={({ active }) =>
-                      clsx({ 'bg-yellow-100 dark:bg-yellow-800': active }, 'menu-item')
+                      clsx({ 'bg-yellow-100 bg-yellow-800': active }, 'menu-item')
                     }
                   >
                     {staffMode ? (

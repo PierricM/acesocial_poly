@@ -61,20 +61,27 @@ const RecommendedProfiles: FC = () => {
     );
   }
 
+  console.log(data?.recommendedProfiles);
+
+  var profiles = data?.recommendedProfiles
+
+  profiles = profiles?.filter(
+    book => book.id === "0x02")
+
   return (
     <>
       <Title />
       <Card as="aside">
         <div className="space-y-4 p-5">
           <ErrorMessage title="Failed to load recommendations" error={error} />
-          {data?.recommendedProfiles?.slice(0, 5)?.map((profile) => (
+          {profiles?.slice(0, 5)?.map((profile) => (
             <div key={profile?.id} className="truncate">
               <UserProfile profile={profile as Profile} isFollowing={profile.isFollowedByMe} showFollow />
             </div>
           ))}
         </div>
         <button
-          className="bg-gray-50 dark:bg-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800 border-t dark:border-t-gray-700/80 text-sm w-full rounded-b-xl text-left px-5 py-3 flex items-center space-x-2 text-gray-600 dark:text-gray-300"
+          className="bg-gray-50 bg-gray-900 hover:bg-gray-100 hover:bg-gray-800 border-t border-t-gray-700/80 text-sm w-full rounded-b-xl text-left px-5 py-3 flex items-center space-x-2 text-gray-600 text-gray-300"
           type="button"
           onClick={() => {
             setShowSuggestedModal(true);

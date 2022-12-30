@@ -40,7 +40,7 @@ const UserPreview: FC<Props> = ({
       loading="lazy"
       className={clsx(
         isBig ? 'w-14 h-14' : 'w-10 h-10',
-        'bg-gray-200 rounded-full border dark:border-gray-700/80'
+        'bg-gray-200 rounded-full border border-gray-700/80'
       )}
       height={isBig ? 56 : 40}
       width={isBig ? 56 : 40}
@@ -116,7 +116,7 @@ const UserPreview: FC<Props> = ({
           arrow={false}
           interactive
           zIndex={1000}
-          className="!bg-white hidden md:block !px-1.5 !py-3 !text-black dark:!text-white w-64 dark:!bg-black border dark:border-gray-700 !rounded-xl"
+          className="!bg-white hidden md:block !px-1.5 !py-3 !text-black !text-white w-64 !bg-black border border-gray-700 !rounded-xl"
         >
           <span>{children}</span>
         </Tippy>

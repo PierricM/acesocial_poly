@@ -32,13 +32,13 @@ export const Input = forwardRef<HTMLInputElement, Props>(function Input(
     <label className="w-full" htmlFor={id}>
       {label && (
         <div className="flex items-center mb-1 space-x-1.5">
-          <div className="font-medium text-gray-800 dark:text-gray-200">{label}</div>
+          <div className="font-medium text-gray-800 text-gray-200">{label}</div>
           <HelpTooltip content={helper} />
         </div>
       )}
       <div className="flex">
         {prefix && (
-          <span className="inline-flex items-center px-3 text-gray-500 bg-gray-100 rounded-l-xl border border-r-0 border-gray-300 dark:bg-gray-900 dark:border-gray-700/80">
+          <span className="inline-flex items-center px-3 text-gray-500 bg-gray-100 rounded-l-xl border border-r-0 border-gray-300 bg-gray-900 border-gray-700/80">
             {prefix}
           </span>
         )}
@@ -51,7 +51,7 @@ export const Input = forwardRef<HTMLInputElement, Props>(function Input(
             {
               'opacity-60 bg-gray-500 bg-opacity-20': props.disabled
             },
-            'flex items-center border bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-700/80 focus-within:border-brand-500 focus-within:ring-brand-400 w-full'
+            'flex items-center border bg-white bg-gray-800 border-gray-300 border-gray-700/80 focus-within:border-brand-500 focus-within:ring-brand-400 w-full'
           )}
         >
           <input

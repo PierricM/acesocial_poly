@@ -7,7 +7,7 @@ const Privacy: FC = () => {
   return (
     <>
       <MetaTags title={`Privacy • ${APP_NAME}`} />
-      <div className="flex justify-center items-center w-full h-48 bg-brand-400">
+      <div className="flex justify-center items-center w-full h-48 bg-pink-400">
         <div className="relative text-center">
           <h1 className="text-3xl font-bold text-white md:text-4xl">Privacy Policy</h1>
           <div className="flex justify-center mt-4">
@@ -18,14 +18,14 @@ const Privacy: FC = () => {
       <div className="relative">
         <div className="flex justify-center">
           <div className="relative mx-auto rounded-lg sm:w-2/4 max-w-3/4">
-            <div className="!p-8 max-w-none text-gray-600 dark:text-gray-200">
+            <div className="!p-8 max-w-none text-gray-600 text-gray-200">
               <p>
                 {APP_NAME}.xyz. (&ldquo;{APP_NAME}&rdquo; or &ldquo;we&rdquo;) respects and protects the
                 privacy of Users (&ldquo;you&rdquo; or &ldquo;users&rdquo;). {APP_NAME} will collect and use
                 your Personal Information, generated from your use of {APP_NAME}, in accordance with this
                 Privacy Policy (&ldquo;Policy&rdquo;).
               </p>
-              <div className="mt-8 mb-5 text-xl font-bold text-black dark:text-white">
+              <div className="mt-8 mb-5 text-xl font-bold text-black text-white">
                 What information do we collect
               </div>
               <p className="mb-5">We get information about you in a range of ways.</p>
@@ -42,7 +42,7 @@ const Privacy: FC = () => {
                   Usage information, such as information about how you interact with us, and it is anonymous;
                 </li>
               </ul>
-              <div className="mt-8 mb-5 text-xl font-bold text-black dark:text-white">
+              <div className="mt-8 mb-5 text-xl font-bold text-black text-white">
                 How we use the information we collect
               </div>
               <p className="mb-5">
@@ -53,7 +53,7 @@ const Privacy: FC = () => {
                 <li>Provide the Services and customer support you request;</li>
                 <li>Resolve disputes and troubleshoot problems;</li>
               </ul>
-              <div className="mt-8 mb-5 text-xl font-bold text-black dark:text-white">
+              <div className="mt-8 mb-5 text-xl font-bold text-black text-white">
                 How we update our policy
               </div>
               <p className="mb-5">
@@ -73,7 +73,7 @@ const Privacy: FC = () => {
                 If you do not agree to our Privacy Policy, as amended, you must stop using our Services. We
                 recommend that you visit this page frequently to check for changes.
               </p>
-              <div className="mt-8 mb-5 text-xl font-bold text-black dark:text-white">Contact Us</div>
+              <div className="mt-8 mb-5 text-xl font-bold text-white">Contact Us</div>
               <p className="mb-3 linkify">
                 If you have any questions about our Privacy Policy, please do not hesitate to contact us at{' '}
                 <a href="mailto:support@lenster.xyz">support@lenster.xyz</a>.

@@ -24,7 +24,7 @@ const Suggested: FC = () => {
     <div className="overflow-y-auto max-h-[80vh]">
       <ErrorMessage title="Failed to load recommendations" error={error} />
       <div className="space-y-3">
-        <div className="divide-y dark:divide-gray-700">
+        <div className="divide-y divide-gray-700">
           {data?.recommendedProfiles?.map((profile) => (
             <div className="p-5" key={profile?.id}>
               <UserProfile

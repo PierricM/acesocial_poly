@@ -53,7 +53,7 @@ const MutualFollowersList: FC<Props> = ({ profileId }) => {
         loader={<InfiniteLoader />}
         scrollableTarget="scrollableDiv"
       >
-        <div className="divide-y dark:divide-gray-700">
+        <div className="divide-y divide-gray-700">
           {profiles?.map((profile) => (
             <div className="p-5" key={profile?.id}>
               <UserProfile

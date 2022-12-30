@@ -32,8 +32,8 @@ const Preview: FC<Props> = ({ profile, message, conversationKey, isSelected }) =
   return (
     <div
       className={clsx(
-        'py-3 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800',
-        isSelected && 'bg-gray-50 dark:bg-gray-800'
+        'py-3 cursor-pointer hover:bg-gray-100 hover:bg-gray-800',
+        isSelected && 'bg-gray-50 bg-gray-800'
       )}
       onClick={() => onConversationSelected(profile.id)}
     >
@@ -41,7 +41,7 @@ const Preview: FC<Props> = ({ profile, message, conversationKey, isSelected }) =
         <img
           src={getAvatar(profile)}
           loading="lazy"
-          className="w-10 h-10 bg-gray-200 rounded-full border dark:border-gray-700/80"
+          className="w-10 h-10 bg-gray-200 rounded-full border border-gray-700/80"
           height={40}
           width={40}
           alt={profile?.handle}

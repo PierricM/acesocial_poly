@@ -219,8 +219,8 @@ const NewMentionsPlugin: FC = () => {
       menuRenderFn={(anchorElementRef, { selectedIndex, selectOptionAndCleanUp, setHighlightedIndex }) =>
         anchorElementRef.current && results.length
           ? ReactDOM.createPortal(
-              <div className="bg-white dark:bg-gray-900 mt-8 border dark:border-gray-700/80 rounded-xl shadow-sm w-52 sticky z-40 bg-brand min-w-full">
-                <ul className="divide-y dark:divide-gray-700/80">
+              <div className="bg-white bg-gray-900 mt-8 border border-gray-700/80 rounded-xl shadow-sm w-52 sticky z-40 bg-brand min-w-full">
+                <ul className="divide-y divide-gray-700/80">
                   {options.map((option, i: number) => (
                     <MentionsTypeaheadMenuItem
                       index={i}

@@ -38,7 +38,7 @@ const Thanks: FC = () => {
   return (
     <>
       <MetaTags title={`Thanks • ${APP_NAME}`} />
-      <div className="flex justify-center items-center w-full h-48 bg-brand-400">
+      <div className="flex justify-center items-center w-full h-48 bg-pink-400">
         <div className="relative text-center">
           <div className="flex items-center space-x-2 text-3xl font-bold text-white md:text-4xl">
             <div>Thank you!</div>
@@ -50,7 +50,7 @@ const Thanks: FC = () => {
       <div className="relative">
         <div className="flex justify-center">
           <div className="relative mx-auto rounded-lg lg:w-2/4 max-w-3/4">
-            <div className="px-5 pb-10 space-y-10 max-w-none text-center text-gray-900 divide-y dark:text-gray-200 dark:divide-gray-700">
+            <div className="px-5 pb-10 space-y-10 max-w-none text-center text-gray-900 divide-y text-gray-200 divide-gray-700">
               <Brand
                 name="Vercel"
                 logo="vercel"

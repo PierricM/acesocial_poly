@@ -64,7 +64,7 @@ const Followers: FC<Props> = ({ profile }) => {
         loader={<InfiniteLoader />}
         scrollableTarget="scrollableDiv"
       >
-        <div className="divide-y dark:divide-gray-700">
+        <div className="divide-y divide-gray-700">
           {followers?.map((follower) => (
             <div className="p-5" key={follower?.wallet?.defaultProfile?.id}>
               {follower?.wallet?.defaultProfile ? (

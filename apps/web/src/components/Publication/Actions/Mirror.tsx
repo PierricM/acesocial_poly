@@ -167,7 +167,7 @@ const Mirror: FC<Props> = ({ publication, isFullPublication }) => {
       <span className={clsx(mirrored ? 'text-green-500' : 'text-brand', 'flex items-center space-x-1')}>
         <span
           className={clsx(
-            mirrored ? 'hover:bg-green-300' : 'hover:bg-brand-300',
+            mirrored ? 'hover:bg-green-300' : 'hover:bg-pink-300',
             'p-1.5 rounded-full hover:bg-opacity-20'
           )}
         >

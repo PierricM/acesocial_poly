@@ -62,7 +62,7 @@ const Collectors: FC<Props> = ({ publicationId }) => {
         loader={<InfiniteLoader />}
         scrollableTarget="scrollableDiv"
       >
-        <div className="divide-y dark:divide-gray-700">
+        <div className="divide-y divide-gray-700">
           {profiles?.map((wallet) => (
             <div className="p-5" key={wallet?.address}>
               {wallet?.defaultProfile ? (

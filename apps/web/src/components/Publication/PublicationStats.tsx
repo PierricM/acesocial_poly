@@ -42,7 +42,7 @@ const PublicationStats: FC<Props> = ({ publication }) => {
               Leafwatch.track(PUBLICATION.STATS.MIRRORED_BY);
             }}
           >
-            <b className="text-black dark:text-white">{nFormatter(mirrorCount)}</b> Mirrors
+            <b className="text-black text-white">{nFormatter(mirrorCount)}</b> Mirrors
           </button>
           <Modal
             title="Mirrored by"
@@ -63,7 +63,7 @@ const PublicationStats: FC<Props> = ({ publication }) => {
               Leafwatch.track(PUBLICATION.STATS.LIKED_BY);
             }}
           >
-            <b className="text-black dark:text-white">{nFormatter(reactionCount)}</b> Likes
+            <b className="text-black text-white">{nFormatter(reactionCount)}</b> Likes
           </button>
           <Modal
             title="Liked by"
@@ -84,7 +84,7 @@ const PublicationStats: FC<Props> = ({ publication }) => {
               Leafwatch.track(PUBLICATION.STATS.COLLECTED_BY);
             }}
           >
-            <b className="text-black dark:text-white">{nFormatter(collectCount)}</b> Collects
+            <b className="text-black text-white">{nFormatter(collectCount)}</b> Collects
           </button>
           <Modal
             title="Collected by"

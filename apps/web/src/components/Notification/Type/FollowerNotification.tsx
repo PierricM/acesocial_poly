@@ -42,7 +42,7 @@ const FollowerNotification: FC<Props> = ({ notification }) => {
           ) : (
             <NotificationWalletProfileName wallet={notification?.wallet} />
           )}{' '}
-          <span className="text-gray-600 dark:text-gray-400">
+          <span className="text-gray-600 text-gray-400">
             {isSuperFollow ? 'super' : ''} followed you
           </span>
         </div>

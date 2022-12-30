@@ -8,12 +8,12 @@ interface Props {
 }
 
 const Badge: FC<Props> = ({ children }) => (
-  <span className="py-0.5 px-1.5 text-xs font-bold bg-gray-300 rounded-md dark:bg-gray-900">{children}</span>
+  <span className="py-0.5 px-1.5 text-xs font-bold bg-gray-300 rounded-md bg-gray-900">{children}</span>
 );
 
 const StaffBar: FC = () => {
   return (
-    <div className="flex justify-between py-1 px-3 text-sm bg-gray-200 dark:bg-black">
+    <div className="flex justify-between py-1 px-3 text-sm bg-gray-200 bg-black">
       <div className="flex items-center space-x-2">
         {IS_PRODUCTION ? (
           <div className="flex items-center space-x-1">

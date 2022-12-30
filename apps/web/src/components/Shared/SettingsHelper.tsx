@@ -13,7 +13,7 @@ const SettingsHelper: FC<Props> = ({ icon, heading, description }) => {
         {icon}
         <div>{heading}</div>
       </div>
-      <div className="text-gray-600 dark:text-gray-400">{description}</div>
+      <div className="text-gray-600 text-gray-400">{description}</div>
     </div>
   );
 };

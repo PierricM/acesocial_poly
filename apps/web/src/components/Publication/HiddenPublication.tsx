@@ -7,7 +7,7 @@ interface Props {
 
 const HiddenPublication: FC<Props> = ({ type = 'Publication' }) => {
   return (
-    <Card className="!bg-gray-100 dark:!bg-gray-800">
+    <Card className="!bg-gray-100 !bg-gray-800">
       <div className="py-3 px-4 text-sm">{type} was hidden by the author</div>
     </Card>
   );

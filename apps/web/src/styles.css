@@ -11,26 +11,26 @@ html {
 body {
   font-family: 'CircularXXSub', sans-serif;
   @apply bg-gray-50;
-  @apply dark:bg-black;
+  @apply bg-black;
 }
 
 .shimmer {
   @apply animate-pulse;
   @apply bg-gray-300;
-  @apply dark:bg-gray-600;
+  @apply bg-gray-600;
 }
 
 .menu-item {
-  @apply block px-4 py-1.5 text-sm text-gray-700 dark:text-gray-200 m-2 rounded-lg cursor-pointer;
+  @apply block px-4 py-1.5 text-sm text-gray-200 m-2 rounded-lg cursor-pointer;
 }
 
 .text-brand {
-  @apply text-brand-500 dark:text-brand-400/80;
+  @apply text-brand-400/80;
 }
 
 .linkify a {
   @apply text-brand;
-  @apply hover:text-brand-600 dark:hover:text-brand-500;
+  @apply hover:text-brand-500;
 }
 
 .linkify-message a {
@@ -39,11 +39,11 @@ body {
 }
 
 .tab-bg {
-  @apply hover:bg-brand-200;
+  @apply hover:bg-pink-200;
 }
 
 .tab-bg:hover > span {
-  @apply bg-brand-300;
+  @apply bg-pink-300;
 }
 
 .identicon {
@@ -53,7 +53,7 @@ body {
 
 ::-webkit-file-upload-button {
   @apply px-3 py-2 mr-2 border-0 cursor-pointer rounded-l-xl;
-  @apply bg-gray-200 dark:bg-gray-900;
+  @apply bg-gray-900;
 }
 
 .bg-hero {
@@ -63,17 +63,7 @@ body {
       theme('colors.black') 50%,
       theme('colors.transparent')
     ),
-    url(https://assets.lenster.xyz/images/hero.webp);
-  background-size: cover;
-}
-.dark .bg-hero {
-  background: linear-gradient(
-      90deg,
-      theme('colors.black'),
-      theme('colors.black') 50%,
-      theme('colors.transparent')
-    ),
-    url(https://assets.lenster.xyz/images/hero.webp);
+    url(https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cmFuZG9tfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
   background-size: cover;
 }
 
@@ -99,15 +89,15 @@ body {
 }
 
 .label {
-  @apply mb-1 font-medium text-gray-800 dark:text-gray-200;
+  @apply mb-1 font-medium text-gray-200;
 }
 
 .dropdown-active {
-  @apply bg-gray-100 dark:bg-gray-800;
+  @apply bg-gray-800;
 }
 
 .divider {
-  @apply border-b dark:border-gray-700/80;
+  @apply border-gray-700/80;
 }
 
 .plyr {
@@ -115,7 +105,7 @@ body {
 }
 
 .plyr__control--overlaid {
-  @apply !bg-brand-500;
+  @apply !bg-pink-500;
 }
 
 .plyr--full-ui input[type='range'] {
@@ -123,7 +113,7 @@ body {
 }
 
 .plyr__control {
-  @apply hover:!bg-brand-500;
+  @apply hover:!bg-pink-500;
 }
 
 .text-md {
@@ -153,7 +143,7 @@ iframe {
 }
 
 .toolbar-icons button {
-  @apply hover:bg-brand-100 text-brand p-1.5 rounded-lg;
+  @apply hover:bg-pink-100 text-brand p-1.5 rounded-lg;
 }
 
 .toolbar-icon {

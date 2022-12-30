@@ -38,7 +38,7 @@ const FullPublication: FC<Props> = ({ publication }) => {
     <article className="p-5">
       <PublicationType publication={publication} showType />
       <div>
-        <div className="flex justify-between pb-4 space-x-1.5">
+        <div className="flex justify-between pb-4 space-x-1.5 text-white">
           <UserProfile profile={profile ?? publication?.collectedBy?.defaultProfile} />
         </div>
         <div className="ml-[53px]">

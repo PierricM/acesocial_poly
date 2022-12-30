@@ -38,13 +38,13 @@ const MessageTile: FC<MessageTileProps> = ({ message, profile, currentProfile })
         {address !== message.senderAddress && (
           <img
             src={getAvatar(profile)}
-            className="h-10 w-10 bg-gray-200 rounded-full border dark:border-gray-700/80 mr-2"
+            className="h-10 w-10 bg-gray-200 rounded-full border border-gray-700/80 mr-2"
             alt={profile?.handle}
           />
         )}
         <div
           className={clsx(
-            address === message.senderAddress ? 'bg-brand-500' : 'bg-gray-100 dark:bg-gray-700',
+            address === message.senderAddress ? 'bg-pink-500' : 'bg-gray-100 bg-gray-700',
             'px-4 py-2 rounded-lg w-full'
           )}
         >

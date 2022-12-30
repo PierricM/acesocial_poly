@@ -38,8 +38,8 @@ const Navbar: FC = () => {
           className={clsx(
             'w-full text-left px-2 md:px-3 py-1 rounded-md font-bold cursor-pointer text-sm tracking-wide',
             {
-              'text-black dark:text-white bg-gray-200 dark:bg-gray-800': current,
-              'text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white hover:bg-gray-200 dark:hover:bg-gray-800':
+              'text-white bg-gray-200 bg-gray-800': current,
+              'text-gray-700 text-gray-300 hover:text-black hover:text-white hover:bg-gray-200 hover:bg-gray-800':
                 !current
             }
           )}
@@ -65,7 +65,7 @@ const Navbar: FC = () => {
   return (
     <Disclosure
       as="header"
-      className="sticky top-0 z-10 w-full bg-white border-b dark:bg-gray-900 dark:border-b-gray-700/80"
+      className="sticky top-0 z-10 w-full bg-white border-b bg-gray-900 border-b-gray-700/80"
     >
       {({ open }) => (
         <>

@@ -22,8 +22,8 @@ const FeedType: FC<Props> = ({ setFocus, focus }) => {
         Leafwatch.track(`select_${(type ?? 'all_posts')?.toLowerCase()}_filter_in_explore`);
       }}
       className={clsx(
-        { '!bg-brand-500 !text-white': focus === type },
-        'text-xs bg-brand-100 dark:bg-opacity-20 rounded-full px-3 sm:px-4 py-1.5 text-brand border border-brand-300 dark:border-brand-500'
+        { '!bg-pink-500 !text-white': focus === type },
+        'text-xs bg-pink-100 bg-opacity-20 rounded-full px-3 sm:px-4 py-1.5 text-brand border border-brand-300 border-brand-500'
       )}
       aria-label={name}
     >
@@ -34,9 +34,8 @@ const FeedType: FC<Props> = ({ setFocus, focus }) => {
   return (
     <div className="flex flex-wrap gap-3 px-5 mt-3 sm:px-0 sm:mt-0">
       <FeedLink name="All posts" />
-      <FeedLink name="Text" type={PublicationMainFocus.TextOnly} />
-      <FeedLink name="Video" type={PublicationMainFocus.Video} />
       <FeedLink name="Images" type={PublicationMainFocus.Image} />
+      <FeedLink name="Video" type={PublicationMainFocus.Video} />
     </div>
   );
 };

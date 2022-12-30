@@ -66,11 +66,11 @@ const Following: FC<Props> = ({ profile, onProfileSelected }) => {
         loader={<InfiniteLoader />}
         scrollableTarget="scrollableDiv"
       >
-        <div className="divide-y dark:divide-gray-700">
+        <div className="divide-y divide-gray-700">
           {followings?.map((following) => (
             <div
               className={`p-5 ${
-                onProfileSelected && 'hover:bg-gray-100 dark:hover:bg-gray-900 cursor-pointer'
+                onProfileSelected && 'hover:bg-gray-100 hover:bg-gray-900 cursor-pointer'
               }`}
               key={following?.profile?.id}
               onClick={

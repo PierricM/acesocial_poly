@@ -76,7 +76,7 @@ const PreviewList: FC<Props> = ({ className, selectedConversationKey }) => {
       )}
     >
       <Card className="h-full flex justify-between flex-col">
-        <div className="flex justify-between items-center p-5 border-b dark:border-gray-700">
+        <div className="flex justify-between items-center p-5 border-b border-gray-700">
           <div className="font-bold">Messages</div>
           {currentProfile && !showAuthenticating && !showLoading && (
             <button onClick={newMessageClick} type="button">
@@ -89,7 +89,7 @@ const PreviewList: FC<Props> = ({ className, selectedConversationKey }) => {
             onClick={() => setSelectedTab('Following')}
             className={clsx(
               'flex flex-1 justify-center font-bold items-center p-2 m-2 ml-4 rounded text-brand-500 tab-bg cursor-pointer',
-              selectedTab === 'Following' ? 'bg-brand-100' : ''
+              selectedTab === 'Following' ? 'bg-pink-100' : ''
             )}
           >
             <UsersIcon className="mr-2 h-4 w-4" />
@@ -99,12 +99,12 @@ const PreviewList: FC<Props> = ({ className, selectedConversationKey }) => {
             onClick={() => setSelectedTab('Requested')}
             className={clsx(
               'flex flex-1 justify-center font-bold items-center p-2 m-2 mr-4 rounded text-brand-500 tab-bg cursor-pointer',
-              selectedTab === 'Requested' ? 'bg-brand-100' : ''
+              selectedTab === 'Requested' ? 'bg-pink-100' : ''
             )}
           >
             Requested
             {requestedCount > 0 && (
-              <span className="text-sm font-bold ml-2 bg-brand-200 px-3 py-0.5 rounded-2xl">
+              <span className="text-sm font-bold ml-2 bg-pink-200 px-3 py-0.5 rounded-2xl">
                 {requestedCount > 99 ? '99+' : requestedCount}
               </span>
             )}

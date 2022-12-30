@@ -24,7 +24,7 @@ const Explore: NextPage = () => {
     { name: 'For you', emoji: 'leaf-fluttering-in-wind.png', type: PublicationSortCriteria.CuratedProfiles },
     { name: 'Popular', emoji: 'hundred-points.png', type: PublicationSortCriteria.TopCommented },
     { name: 'Trending', emoji: 'heart-on-fire.png', type: PublicationSortCriteria.TopCollected },
-    { name: 'Interesting', emoji: 'hushed-face.png', type: PublicationSortCriteria.TopMirrored }
+    { name: 'Hot', emoji: 'hushed-face.png', type: PublicationSortCriteria.TopMirrored }
   ];
 
   return (
@@ -45,8 +45,8 @@ const Explore: NextPage = () => {
                 }}
                 className={({ selected }) =>
                   clsx(
-                    { 'border-b-2 border-brand-500 !text-black dark:!text-white': selected },
-                    'px-4 pb-2 text-gray-500 outline-none font-medium text-sm'
+                    { 'border-b-2 border-brand-500 text-white': selected },
+                    'px-4 pb-2 text-white outline-none font-medium text-sm'
                   )
                 }
               >

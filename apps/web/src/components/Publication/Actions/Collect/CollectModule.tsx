@@ -258,8 +258,8 @@ const CollectModule: FC<Props> = ({ count, setCount, publication, electedMirror 
       {(collectModule?.type === CollectModules.LimitedFeeCollectModule ||
         collectModule?.type === CollectModules.LimitedTimedFeeCollectModule) && (
         <Tooltip placement="top" content={`${percentageCollected.toFixed(0)}% Collected`}>
-          <div className="w-full h-2.5 bg-gray-200 dark:bg-gray-700">
-            <div className="h-2.5 bg-brand-500" style={{ width: `${percentageCollected}%` }} />
+          <div className="w-full h-2.5 bg-gray-200 bg-gray-700">
+            <div className="h-2.5 bg-pink-500" style={{ width: `${percentageCollected}%` }} />
           </div>
         </Tooltip>
       )}

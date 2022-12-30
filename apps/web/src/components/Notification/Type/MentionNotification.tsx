@@ -29,7 +29,7 @@ const MentionNotification: FC<Props> = ({ notification }) => {
         </div>
         <div className="ml-9">
           <NotificationProfileName profile={profile} />{' '}
-          <span className="text-gray-600 dark:text-gray-400">mentioned you in a </span>
+          <span className="text-gray-600 text-gray-400">mentioned you in a </span>
           <Link href={`/posts/${notification?.mentionPublication?.id}`} className="font-bold">
             {notification?.mentionPublication.__typename?.toLowerCase()}
           </Link>

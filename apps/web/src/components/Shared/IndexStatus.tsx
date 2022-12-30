@@ -53,7 +53,7 @@ const IndexStatus: FC<Props> = ({ type = 'Transaction', txHash, reload = false }
       ) : (
         <div className="flex items-center space-x-1">
           <CheckCircleIcon className="w-5 h-5 text-green-500" />
-          <div className="text-black dark:text-white">Index Successful</div>
+          <div className="text-black text-white">Index Successful</div>
         </div>
       )}
     </a>

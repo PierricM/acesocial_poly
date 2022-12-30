@@ -50,7 +50,7 @@ const List: FC<Props> = ({ setEmoji }) => {
     <div className="max-h-[20rem] overflow-y-auto p-5 grid grid-cols-7 text-lg">
       {emojis.map((emoji: any, index) => (
         <button
-          className="hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg py-1"
+          className="hover:bg-gray-100 hover:bg-gray-800 rounded-lg py-1"
           key={index}
           type="button"
           onClick={() => setEmoji(emoji.emoji)}

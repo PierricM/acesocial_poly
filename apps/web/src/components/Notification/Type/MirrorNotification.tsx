@@ -27,7 +27,7 @@ const MirrorNotification: FC<Props> = ({ notification }) => {
         </div>
         <div className="ml-9">
           <NotificationProfileName profile={notification?.profile} />{' '}
-          <span className="pl-0.5 text-gray-600 dark:text-gray-400">mirrored your </span>
+          <span className="pl-0.5 text-gray-600 text-gray-400">mirrored your </span>
           <Link href={`/posts/${notification?.publication?.id}`} className="font-bold">
             {notification?.publication.__typename?.toLowerCase()}
           </Link>

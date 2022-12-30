@@ -61,7 +61,7 @@ const Likes: FC<Props> = ({ publicationId }) => {
         loader={<InfiniteLoader />}
         scrollableTarget="scrollableDiv"
       >
-        <div className="divide-y dark:divide-gray-700">
+        <div className="divide-y divide-gray-700">
           {profiles?.map((like) => (
             <div className="p-5" key={like?.reactionId}>
               <UserProfile

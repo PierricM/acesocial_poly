@@ -17,8 +17,8 @@ const TabButton: FC<Props> = ({ name, icon, active, count, showOnSm = false, onC
       type="button"
       onClick={onClick}
       className={clsx(
-        { 'text-brand bg-brand-100 dark:bg-opacity-20 bg-opacity-100': active },
-        'flex items-center space-x-2 rounded-lg text-sm px-4 sm:px-3 font-medium py-2 sm:py-1.5 text-gray-500 hover:bg-brand-100 dark:hover:bg-opacity-20 hover:bg-opacity-100'
+        { 'text-brand bg-pink-100 bg-opacity-20 bg-opacity-100': active },
+        'flex items-center space-x-2 rounded-lg text-sm px-4 sm:px-3 font-medium py-2 sm:py-1.5 text-gray-500 hover:bg-pink-100 hover:bg-opacity-20 hover:bg-opacity-100'
       )}
       aria-label={name}
     >
@@ -27,8 +27,8 @@ const TabButton: FC<Props> = ({ name, icon, active, count, showOnSm = false, onC
       {count ? (
         <span
           className={clsx(
-            { 'bg-brand-200 dark:bg-brand-800': active },
-            'px-2 text-xs rounded-full bg-gray-200 dark:bg-gray-800'
+            { 'bg-pink-200 bg-pink-800': active },
+            'px-2 text-xs rounded-full bg-gray-200 bg-gray-800'
           )}
         >
           {nFormatter(count)}
