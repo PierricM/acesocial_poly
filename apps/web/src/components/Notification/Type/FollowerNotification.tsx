@@ -42,9 +42,7 @@ const FollowerNotification: FC<Props> = ({ notification }) => {
           ) : (
             <NotificationWalletProfileName wallet={notification?.wallet} />
           )}{' '}
-          <span className="text-gray-600 text-gray-400">
-            {isSuperFollow ? 'super' : ''} followed you
-          </span>
+          <span className="text-gray-600 text-gray-400">{isSuperFollow ? 'super' : ''} followed you</span>
         </div>
       </div>
       <div className="text-gray-400 text-[12px]">{dayjs(new Date(notification?.createdAt)).fromNow()}</div>
