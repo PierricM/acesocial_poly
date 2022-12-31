@@ -8,10 +8,10 @@ import type { LensterPublication } from '@generated/types';
 import { CollectionIcon } from '@heroicons/react/outline';
 import { SCROLL_THRESHOLD } from 'data/constants';
 import { CustomFiltersTypes, PublicationSortCriteria, useExploreFeedQuery } from 'lens';
+import { useTheme } from 'next-themes';
 import type { FC } from 'react';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { useAppStore } from 'src/store/app';
-import { useTheme } from 'next-themes';
 
 interface Props {
   focus?: any;
