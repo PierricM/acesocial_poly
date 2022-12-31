@@ -41,8 +41,6 @@ const Feed: FC<Props> = ({ focus, feedType = PublicationSortCriteria.CuratedProf
   console.log(publications);
 
   var publications2 = publications;
-  //.filter(book => book.profile.id === "0x59cf")
-  
   const pageInfo = data?.explorePublications?.pageInfo;
   const hasMore = pageInfo?.next && publications2?.length !== pageInfo.totalCount;
 
