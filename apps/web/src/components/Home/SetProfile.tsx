@@ -41,10 +41,7 @@ const SetProfile: FC = () => {
   }
 
   return (
-    <Card
-      as="aside"
-      className="mb-4 bg-green-50 bg-green-900 !border-green-600 space-y-4 text-green-600 p-5"
-    >
+    <Card as="aside" className="mb-4 bg-green-50 bg-green-900 !border-green-600 space-y-4 text-green-600 p-5">
       <div className="flex items-center space-x-2 font-bold">
         <PhotographIcon className="w-5 h-5" />
         <p>Setup your {APP_NAME} profile</p>
