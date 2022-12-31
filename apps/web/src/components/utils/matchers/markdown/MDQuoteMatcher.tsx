@@ -4,9 +4,7 @@ import { Matcher } from 'interweave';
 export class MDQuoteMatcher extends Matcher {
   replaceWith(children: ChildrenNode) {
     return (
-      <span className="py-1.5 pl-2 text-gray-700 border-l-4 text-gray-400 border-gray-700">
-        {children}
-      </span>
+      <span className="py-1.5 pl-2 text-gray-700 border-l-4 text-gray-400 border-gray-700">{children}</span>
     );
   }
 
