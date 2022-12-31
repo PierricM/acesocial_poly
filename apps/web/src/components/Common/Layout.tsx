@@ -120,7 +120,7 @@ const Layout: FC<Props> = ({ children }) => {
   return (
     <>
       <Head>
-        <meta name="theme-color" content={'#1b1b1d'}/>
+        <meta name="theme-color" content={'#1b1b1d'} />
       </Head>
       <Toaster position="bottom-right" toastOptions={getToastOptions('dark')} />
       <GlobalModals />
