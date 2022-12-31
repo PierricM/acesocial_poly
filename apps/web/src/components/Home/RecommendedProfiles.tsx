@@ -65,7 +65,7 @@ const RecommendedProfiles: FC = () => {
 
   var profiles = data?.recommendedProfiles;
 
-  profiles = profiles?.filter(book => book.id === "0x02")
+  profiles = profiles?.filter(book => book.id === "0x02");
 
   return (
     <>
