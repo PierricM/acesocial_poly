@@ -264,9 +264,7 @@ const CollectForm: FC<Props> = ({ setShowModal }) => {
             </div>
             <div className="flex items-center space-x-2">
               <Toggle on={followerOnly} setOn={() => setFollowerOnly(!followerOnly)} />
-              <div className="text-gray-500 text-gray-400 text-sm font-bold">
-                Only followers can collect
-              </div>
+              <div className="text-gray-500 text-gray-400 text-sm font-bold">Only followers can collect</div>
             </div>
           </div>
         </div>
