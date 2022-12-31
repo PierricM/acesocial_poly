@@ -11,6 +11,7 @@ import { CustomFiltersTypes, PublicationSortCriteria, useExploreFeedQuery } from
 import type { FC } from 'react';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { useAppStore } from 'src/store/app';
+import { useTheme } from 'next-themes';
 
 interface Props {
   focus?: any;
@@ -19,6 +20,8 @@ interface Props {
 
 const Feed: FC<Props> = ({ focus, feedType = PublicationSortCriteria.CuratedProfiles }) => {
   const currentProfile = useAppStore((state) => state.currentProfile);
+  const { theme, setTheme } = useTheme();
+  setTheme('dark');
 
   console.log(focus);
 
