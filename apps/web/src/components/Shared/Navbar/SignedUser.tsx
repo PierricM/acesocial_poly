@@ -257,9 +257,7 @@ const SignedUser: FC = () => {
                   <Menu.Item
                     as="div"
                     onClick={toggleStaffMode}
-                    className={({ active }) =>
-                      clsx({ 'bg-yellow-100 bg-yellow-800': active }, 'menu-item')
-                    }
+                    className={({ active }) => clsx({ 'bg-yellow-100 bg-yellow-800': active }, 'menu-item')}
                   >
                     {staffMode ? (
                       <div className="flex items-center space-x-1.5">
