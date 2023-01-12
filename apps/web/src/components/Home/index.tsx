@@ -5,6 +5,7 @@ import BetaWarning from '@components/Home/BetaWarning';
 import Footer from '@components/Shared/Footer';
 import { GridItemEight, GridItemFour, GridLayout } from '@components/UI/GridLayout';
 import type { NextPage } from 'next';
+import { useTheme } from 'next-themes';
 import { useState } from 'react';
 import { useAppStore } from 'src/store/app';
 
@@ -21,6 +22,9 @@ import Timeline from './Timeline';
 const Home: NextPage = () => {
   const currentProfile = useAppStore((state) => state.currentProfile);
   const [feedType, setFeedType] = useState<'TIMELINE' | 'HIGHLIGHTS'>('TIMELINE');
+  const { setTheme } = useTheme();
+
+  setTheme('dark');
 
   return (
     <>
